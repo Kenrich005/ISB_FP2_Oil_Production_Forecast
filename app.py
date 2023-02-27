@@ -14,6 +14,7 @@ import seaborn as sns
 import plotly.express as px               
 from plotly.subplots import make_subplots 
 import plotly.graph_objects as go
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 page_bg_img = '''
 <style>
@@ -116,7 +117,7 @@ with prediction:
     plt.xlabel('Time Period', fontsize=10)
     plt.title('Oil Production in US over time period', fontsize = 12)
     plt.show()
-    st.pyplot(fig=plt, use_container_width=False)
+    st.pyplot()
     st.write("\n\n\n")
     st.markdown("""        """)
     
