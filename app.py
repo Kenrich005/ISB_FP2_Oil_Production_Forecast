@@ -60,7 +60,7 @@ with plots:
     plt.xlabel('Time Period', fontsize=10)
     plt.title('Oil Production in US over 5 Years', fontsize = 12)
     plt.show()
-    st.pyplot(fig=plt, use_container_width=False)
+    st.pyplot()
     st.write("\n\n\n")
     st.markdown("""        """)
 
